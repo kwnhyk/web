@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내 사이트</title>
+<style>
+html { background: url(http://cfs9.blog.daum.net/image/6/blog/2007/11/01/08/42/472912ed64065&filename=43463_800.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+div {
+  background: url(http://cfs9.blog.daum.net/image/6/blog/2007/11/01/08/42/472912ed64065&filename=43463_800.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ul {
+
+	padding: 10px 10px 10px 50px;
+	list-style-position: inside; }
+	body { background-color : black; }
+	h3 { font: italic bold 20px ;color:white; }
+	hr { border : 5px solid white; }
+	span { color : red; font-size : 20px; }
+	span {
+	transition: font-size 5s;
+}
+span:hover {
+
+	font-size : 500%;
+}
+      p {
+        padding: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #ffffff;
+        background-color: rgba( 255, 255, 255, 0.5 );
+
+
+      }
+</style>
+</head>
+<body>
+	<div>
+	<object width="300" height="25"><param name="movie" value="http://www.youtube.com/v/4Il1pnKYBmc?version=2&autoplay=1&loop=1&showinfo=0&rel=0&theme=light"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/4Il1pnKYBmc?version=2&autoplay=1&loop=1&showinfo=0&rel=0&theme=light" type="application/x-shockwave-flash" width="300" height="25" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<h3>전공관련</h3>
+<hr>
+<ul>
+	<li><a href="https://programmers.co.kr/" target="_blank"><span>프로그래밍</span></a>
+	<li><a href="https://www.ntu.edu.sg/home/ehchua/programming/howto/Git_HowTo.html" target="_blank"><span>GIT Guide</span></a>
+		<li><a href="https://github.com/" target="_blank"><span>GIThub</span></a>
+</ul>
+<hr>
+<h3>포털사이트</h3>
+<ul>
+	<li><a href="https://www.naver.com/" target="_blank">
+		<img src="http://post.phinf.naver.net/20150717_284/ysu192_1437120957958IV6zD_PNG/mug_obj_2015071717155847.jpg/"  width="50" height="50" 	onmouseover="startTimer(5000)"
+	onmouseout="cancelTimer()">
+		</a>
+
+	</li>
+	<script>
+var timerID=null;
+function startTimer(time) {
+
+	timerID = setTimeout("load('http://www.naver.com')", time);
+
+
+	document.getElementById("img").title = "타이머 작동 ";
+}
+function cancelTimer() {
+	if(timerID !=null)
+  clearTimeout(timerID);
+}
+function load(url) {
+	window.location = url;
+}
+function load() {
+	var select = document.getElementById("site") ;
+
+	var openNewWindow = window.open("about:blank");
+openNewWindow.location.href = select.options[select.selectedIndex].value;
+}
+</script>
+	<li><a href="https://www.google.com/" target="_blank">
+		<img src="http://www.bloter.net/wp-content/uploads/2017/06/%EA%B5%AC%EA%B8%80-1-765x430.png" width="50" height="50"
+		  alt="구글">
+		</a>
+	</li>
+</ul>
+<hr>
+<h3>즐겨찾기</h3>
+
+<select id="site" style="width:200px;">
+	<option value="https://opentutorials.org/course/1" selected >생활코딩
+	<option value="http://www.danawa.com/">다나와
+	<option value="http://quasarzone.co.kr/">퀘이사존
+</select>
+
+<button onclick="load()" >접속</button>
+
+</body>
+<br> </br>
+<br></br>
+<br></br>
+
+
+
+
+<P>KWON</P>
+
+</div>
+</html>
